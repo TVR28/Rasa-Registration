@@ -1,0 +1,48 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey
+    - Welcome
+
+- intent: register
+  examples: |
+    - Register
+    - Student registration
+    - I want to register
+
+- intent: choose_inter
+  examples: |
+    - I want to choose Intermediate
+    - Choose Intermediate
+    - Inter registration
+
+- intent: choose_btech
+  examples: |
+    - I want to choose BTech
+    - Choose BTech
+    - BTech registration
+
+- intent: provide_name
+  examples: |
+    - My name is [John Doe](person)
+    - Name: [Alice](person)
+
+- intent: provide_age
+  examples: |
+    - My age is [25](age)
+    - Age: [30](age)
+
+- intent: provide_gender
+  examples: |
+    - I am [Male](gender)
+    - Female
+    - Others
+
+- intent: provide_email
+  examples: |
+    - My email is [john@example.com](email)
+    - Email: [alice@gmail.com](email)

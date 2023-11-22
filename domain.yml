@@ -1,0 +1,68 @@
+version: "2.0"
+
+intents:
+  - greet
+  - register
+  - choose_inter
+  - choose_btech
+  - provide_name
+  - provide_age
+  - provide_gender
+  - provide_email
+
+responses:
+  utter_greet:
+    - text: "Welcome to the RASA chatbot, Click Register for student registration"
+      buttons:
+        - title: "Register"
+
+  utter_register_options:
+    - text: "Choose Your Degree"
+      buttons:
+        - title: "Inter"
+        - title: "BTech"
+
+  utter_choose_inter:
+    - text: "Choose your stream"
+      buttons:
+        - title: "MPC"
+        - title: "BiPC"
+        - title: "HEC"
+
+  utter_choose_btech:
+    - text: "Choose your branch"
+      buttons:
+        - title: "CSE"
+        - title: "ECE"
+        - title: "MECH"
+
+  utter_provide_name:
+    - text: "Please enter your name"
+
+  utter_provide_age:
+    - text: "Please enter your age"
+
+  utter_provide_gender:
+    - text: "Please select your gender"
+      buttons:
+        - title: "Male"
+        - title: "Female"
+        - title: "Others"
+
+  utter_provide_email:
+    - text: "Please enter your email"
+
+  utter_thank_you:
+    - text: "Thank you for registration"
+
+actions:
+  - utter_greet
+  - utter_register_options
+  - utter_choose_inter
+  - utter_choose_btech
+  - utter_provide_name
+  - utter_provide_age
+  - utter_provide_gender
+  - utter_provide_email
+  - utter_thank_you
+

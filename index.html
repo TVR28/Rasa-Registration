@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <style>
+      .rw-conversation-container .rw-header{background-color:hsl(250, 69%, 61%);}
+      .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: hsl(250, 69%, 61%);}
+      .rw-launcher{background-color: hsl(250, 69%, 61%);}
+      .rw-conversation-container .rw-reply{background-color: hsl(250, 69%, 61%); border: 1px solid hsl(250, 69%, 61%);}
+  </style>
+  </head>
+   
+    <body>
+    
+        <script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    // urls
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005/",
+                    // socketUrl: "http://43.205.188.94:5005/", // ivinbot server url
+                    // socketUrl: "http://43.205.188.94:5009/",
+                    // socketUrl: "https://d225-49-204-231-39.ngrok-free.app",
+                    title: 'Ivin',
+                    subtitle: 'Say hi and get started!',
+                    initPayload: '/greet',
+                    profileAvatar: "https://img.icons8.com/fluency/344/chatbot.png",
+                    openLauncherImage: "./assets/svg/comment.svg",
+                    closeImage: "./assets/svg/down.svg",
+                    showMessageDate: true,
+                    inputTextFieldHint: "Type 'Hi' to start the conversation",
+                    embedded: true,
+                    // customMessageDelay: (message) => {
+                    //   let delay = message.length * 40;
+                    //   if (delay > 3 * 1000) delay = 3 * 1000;
+                    //   if (delay < 800) delay = 800;
+                    //   return delay;
+                    // }
+                    
+                    // add other props here
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+          })();
+          localStorage.clear();
+          </script>
+    </body>
+</html>
+
+ 
+<!-- <div id="rasa-chat-widget" data-websocket-url="http://localhost:5005/"></div>
+<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script> -->
+
+<!-- <div id="rasa-chat-widget" data-websocket-url="http://43.205.188.94:5005/"></div>
+<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script> -->

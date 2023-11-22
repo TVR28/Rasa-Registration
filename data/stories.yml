@@ -1,0 +1,121 @@
+version: "2.0"
+
+stories:
+  - story: Happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: register
+      - action: utter_register_options
+      - intent: choose_inter
+      - action: utter_choose_inter
+      - intent: provide_name
+      - action: utter_provide_name
+      - intent: provide_age
+      - action: utter_provide_age
+      - intent: provide_gender
+      - action: utter_provide_gender
+      - intent: provide_email
+      - action: utter_thank_you
+
+  - story: Register Inter - MPC
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: register
+      - action: utter_register_options
+      - intent: choose_inter
+      - action: utter_choose_inter
+      - intent: choose_inter
+      - action: utter_provide_name
+      - intent: provide_age
+      - action: utter_provide_age
+      - intent: provide_gender
+      - action: utter_provide_gender
+      - intent: provide_email
+      - action: utter_thank_you
+
+  - story: Register Inter - BiPC
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: register
+      - action: utter_register_options
+      - intent: choose_inter
+      - action: utter_choose_inter
+      - intent: choose_inter
+      - action: utter_provide_name
+      - intent: provide_age
+      - action: utter_provide_age
+      - intent: provide_gender
+      - action: utter_provide_gender
+      - intent: provide_email
+      - action: utter_thank_you
+
+  - story: Register Inter - HEC
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: register
+      - action: utter_register_options
+      - intent: choose_inter
+      - action: utter_choose_inter
+      - intent: choose_inter
+      - action: utter_provide_name
+      - intent: provide_age
+      - action: utter_provide_age
+      - intent: provide_gender
+      - action: utter_provide_gender
+      - intent: provide_email
+      - action: utter_thank_you
+
+  - story: Register BTech - CSE
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: register
+      - action: utter_register_options
+      - intent: choose_btech
+      - action: utter_choose_btech
+      - intent: choose_btech
+      - action: utter_provide_name
+      - intent: provide_age
+      - action: utter_provide_age
+      - intent: provide_gender
+      - action: utter_provide_gender
+      - intent: provide_email
+      - action: utter_thank_you
+
+  - story: Register BTech - ECE
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: register
+      - action: utter_register_options
+      - intent: choose_btech
+      - action: utter_choose_btech
+      - intent: choose_btech
+      - action: utter_provide_name
+      - intent: provide_age
+      - action: utter_provide_age
+      - intent: provide_gender
+      - action: utter_provide_gender
+      - intent: provide_email
+      - action: utter_thank_you
+
+  - story: Register BTech - MECH
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: register
+      - action: utter_register_options
+      - intent: choose_btech
+      - action: utter_choose_btech
+      - intent: choose_btech
+      - action: utter_provide_name
+      - intent: provide_age
+      - action: utter_provide_age
+      - intent: provide_gender
+      - action: utter_provide_gender
+      - intent: provide_email
+      - action: utter_thank_you
